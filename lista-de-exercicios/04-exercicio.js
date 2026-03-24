@@ -2,22 +2,22 @@
 
 // 01 - função que escreve meu nome
 
-function escrevaMeuNome(nome){
-    return 'O seu nome é: ' + nome;
+function escrevaMeuNome(nome) {
+  return "O seu nome é: " + nome;
 }
 
-const resultadoNome = escrevaMeuNome('Gabriela'); // guardando o resultado da função em uma variável
+const resultadoNome = escrevaMeuNome("Gabriela"); // guardando o resultado da função em uma variável
 
 console.log(resultadoNome);
 
 // 02 - função para verificar se sou maior de idade
 
 function verificarIdade(idade) {
-    if (idade >= 18) {
-        return escrevaMeuNome('Gabriela') + ' e você é maior de idade';
-    } else {
-        return 'Menor de idade';
-    }
+  if (idade >= 18) {
+    return escrevaMeuNome("Gabriela") + " e você é maior de idade";
+  } else {
+    return "Menor de idade";
+  }
 }
 
 const idade = 25;

@@ -1,14 +1,14 @@
-
-function sayMyName(name) { // declarando uma função
-    console.log('Your name is: ' + name);
+function sayMyName(name) {
+  // declarando uma função
+  console.log("Your name is: " + name);
 }
 
-sayMyName('Gabriela'); // chamando a função
+sayMyName("Gabriela"); // chamando a função
 
 //
 
 function quadrado(valor) {
-    return valor * valor;
+  return valor * valor;
 }
 
 const quadradoDeDez = quadrado(10); // chamei a função, parei o parâmetro, executou e está me retornando um resultado
@@ -17,8 +17,8 @@ console.log(quadradoDeDez);
 //
 
 function incrementarJuros(valor, percentualJuros) {
-    const valorDeAcrescimo = (percentualJuros / 100) * valor;
-    return valor + valorDeAcrescimo;
+  const valorDeAcrescimo = (percentualJuros / 100) * valor;
+  return valor + valorDeAcrescimo;
 }
 
 console.log(incrementarJuros(100, 10));

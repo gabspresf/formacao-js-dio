@@ -18,10 +18,12 @@ const media = (nota1 + nota2 + nota3) / 3;
 
 console.log(media.toFixed(2));
 
-if (media < 5 ) { // média menor que 5, reprovação
-    console.log('Reprovação');
-} else if (media >= 5 && media <= 7) { // "se a média for maior ou igual a 5 E menor ou igual a 7"
-    console.log('Recuperação');
+if (media < 5) {
+  // média menor que 5, reprovação
+  console.log("Reprovação");
+} else if (media >= 5 && media <= 7) {
+  // "se a média for maior ou igual a 5 E menor ou igual a 7"
+  console.log("Recuperação");
 } else {
-    console.log('Passou de semestre'); // média acima de 7, passou de semestre
+  console.log("Passou de semestre"); // média acima de 7, passou de semestre
 }

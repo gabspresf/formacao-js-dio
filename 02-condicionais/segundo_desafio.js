@@ -13,14 +13,14 @@ const precoEtanol = 5.79;
 const precoGasolina = 6.66;
 const kmPorLitros = 10; // 10km para gastar 1 litro de gasolina
 const distanciaEmKm = 100; // percorrendo uma distancia
-const tipoCombustivel = 'Etanol';
+const tipoCombustivel = "Etanol";
 
 const litrosConsumidos = distanciaEmKm / kmPorLitros;
 
-if (tipoCombustivel === 'Gasolina') {
-    const valorGasto = precoEtanol * litrosConsumidos;
-    console.log(valorGasto.toFixed(2));
+if (tipoCombustivel === "Gasolina") {
+  const valorGasto = precoEtanol * litrosConsumidos;
+  console.log(valorGasto.toFixed(2));
 } else {
-    const valorGasto = precoGasolina * litrosConsumidos;
-    console.log(valorGasto.toFixed(2));
+  const valorGasto = precoGasolina * litrosConsumidos;
+  console.log(valorGasto.toFixed(2));
 }

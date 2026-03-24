@@ -14,23 +14,23 @@ Código Condição de pagamento:
 4 - Acima de duas vezes, preço normal de etiqueta mais juros de 10%;
 */
 
-function aplicarDesconto(valor, desconto){
-    return (valor - (valor * desconto / 100)); // calculando o desconto
+function aplicarDesconto(valor, desconto) {
+  return valor - (valor * desconto) / 100; // calculando o desconto
 }
 
-function aplicarJuros(valor, juros){
-    return (valor + (valor * juros / 100)); // calculando o incremento (juros)
+function aplicarJuros(valor, juros) {
+  return valor + (valor * juros) / 100; // calculando o incremento (juros)
 }
 
 const precoEtiqueta = 100;
 const formaPagamento = 4;
 
 if (formaPagamento === 1) {
-    console.log(aplicarDesconto(precoEtiqueta, 10));
+  console.log(aplicarDesconto(precoEtiqueta, 10));
 } else if (formaPagamento === 2) {
-    console.log(aplicarDesconto(precoEtiqueta, 15));
+  console.log(aplicarDesconto(precoEtiqueta, 15));
 } else if (formaPagamento === 3) {
-    console.log(precoEtiqueta);
+  console.log(precoEtiqueta);
 } else {
-    console.log(aplicarJuros(precoEtiqueta, 10));
+  console.log(aplicarJuros(precoEtiqueta, 10));
 }

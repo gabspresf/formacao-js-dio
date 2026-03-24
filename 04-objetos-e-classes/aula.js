@@ -1,15 +1,17 @@
 // objeto é uma coleção dinâmica de chave/valor
 
 // sintaxe:
-const pessoa = { // objeto literal
-    nome: 'Gabriela Prestes Farias',
-    idade: 25,
+const pessoa = {
+  // objeto literal
+  nome: "Gabriela Prestes Farias",
+  idade: 25,
 
-    descrever: function() { // posso usar os valores do objeto já que a função está dentro dele
-        console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`);
-        // this: quando a função está dentro de um objeto, o this assume o objeto
-    }
-}
+  descrever: function () {
+    // posso usar os valores do objeto já que a função está dentro dele
+    console.log(`Meu nome é ${this.nome} e minha idade é ${this.idade}`);
+    // this: quando a função está dentro de um objeto, o this assume o objeto
+  },
+};
 
 pessoa.descrever();
 
@@ -30,7 +32,7 @@ pessoa.descrever();
 // acessando dinamicamente o atributo através de uma string:
 // notação de coleção
 
-console.log(pessoa['nome']);
+console.log(pessoa["nome"]);
 
 // reatribuindo:
 // pessoa = ['nome'] = 'teste'; é a mesma coisa de pessoa.nome = 'teste';

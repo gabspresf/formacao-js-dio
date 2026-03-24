@@ -9,23 +9,23 @@
 // marca, que estamos recebendo do construtor
 
 class Carro {
-    marca;
-    cor;
-    gastoMedioPorKM;
+  marca;
+  cor;
+  gastoMedioPorKM;
 
-    constructor(marca, cor, gastoMedioPorKM){
-        this.marca = marca;
-        this.cor = cor;
-        this.gastoMedioPorKM = gastoMedioPorKM;
-    }
+  constructor(marca, cor, gastoMedioPorKM) {
+    this.marca = marca;
+    this.cor = cor;
+    this.gastoMedioPorKM = gastoMedioPorKM;
+  }
 
-    calcularViagem(distanciaEmKM, precoCombustivel){
-        return distanciaEmKM * this.gastoMedioPorKM * precoCombustivel;
-    }
+  calcularViagem(distanciaEmKM, precoCombustivel) {
+    return distanciaEmKM * this.gastoMedioPorKM * precoCombustivel;
+  }
 }
 
-const uno = new Carro('Fiat', 'Prata', 1 / 12);
-const palio = new Carro('Fiat', 'Preto', 1 / 10);
+const uno = new Carro("Fiat", "Prata", 1 / 12);
+const palio = new Carro("Fiat", "Preto", 1 / 10);
 
 // invocando o método
 

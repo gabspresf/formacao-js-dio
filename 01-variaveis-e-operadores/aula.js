@@ -1,4 +1,3 @@
-
 // Declaração de variáveis
 // let variavel = 10; // Posso declarar outro valor depois usando o let
 // variavel = 20;
